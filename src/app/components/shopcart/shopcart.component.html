@@ -1,0 +1,124 @@
+<app-header></app-header>
+<!-- inner banner -->
+<section class="w3l-inner-banner-main">
+    <div class="about-inner">
+        <div class="wrapper">
+            
+            <ul class="breadcrumbs-custom-path">
+                <h3>Ecommerce Cart</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- //covers -->
+<section class="w3l-ecom-cart">
+    <div class="covers-main">
+        <div class="wrapper">
+            <h1>Shopping Cart</h1>
+            <div class="shopping-cart">
+                <div class="column-labels">
+                    <label class="product-image">Items</label>
+                    <label class="product-details">Product</label>
+                    <label class="product-price">Price</label>
+                    <label class="product-quantity">Quantity</label>
+                    <label class="product-removal">Remove</label>
+                    <label class="product-line-price">Total</label>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <a href="ecommerce-single.html"><img src="assets/images/p2.jpg" alt=""
+                                class="img-responsive"></a>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title"><a href="ecommerce-single.html">Puma</a></div>
+                        <p class="product-description">Lorem Ipsum</p>
+                    </div>
+                    <div class="product-price">16.99</div>
+                    <div class="product-quantity">
+                        <input type="number" value="2" min="1">
+                    </div>
+                    <div class="product-removal close">
+                        <button class="remove-product">
+                            Remove
+                        </button>
+                    </div>
+                    <div class="product-line-price">25.98</div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <a href="ecommerce-single.html"><img src="assets/images/p4.jpg" alt=""
+                                class="img-responsive"></a>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title"><a href="ecommerce-single.html">Reebok</a></div>
+                        <p class="product-description">Lorem Ipsum</p>
+                    </div>
+                    <div class="product-price">25.99</div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="product-removal close">
+                        <button class="remove-product">
+                            Remove
+                        </button>
+                    </div>
+                    <div class="product-line-price">45.99</div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <a href="ecommerce-single.html"><img src="assets/images/p5.jpg" alt=""
+                                class="img-responsive"></a>
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title"><a href="ecommerce-single.html">Lewis</a></div>
+                        <p class="product-description">Lorem Ipsum</p>
+                    </div>
+                    <div class="product-price">69.99</div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="product-removal close">
+                        <button class="remove-product">
+                            Remove
+                        </button>
+                    </div>
+                    <div class="product-line-price">69.99</div>
+                </div>
+                <div class="totals">
+                    <div class="totals-item">
+                        <label>Subtotal</label>
+                        <div class="totals-value" id="cart-subtotal">141.96</div>
+                    </div>
+                    <div class="totals-item">
+                        <label>Tax (5%)</label>
+                        <div class="totals-value" id="cart-tax">3.60</div>
+                    </div>
+                    <div class="totals-item">
+                        <label>Shipping</label>
+                        <div class="totals-value" id="cart-shipping">15.00</div>
+                    </div>
+                    <div class="totals-item totals-item-total">
+                        <label>Grand Total</label>
+                        <div class="totals-value" id="cart-total">160.56</div>
+                    </div>
+                </div>
+                <a href="login.html" class="checkout">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- close script -->
+    <script>
+        var closebtns = document.getElementsByClassName("close");
+        var i;
+
+        for (i = 0; i < closebtns.length; i++) {
+            closebtns[i].addEventListener("click", function () {
+                this.parentElement.style.display = 'none';
+            });
+        }
+    </script>
+    <!-- //close script -->
+</section>
+<app-footer></app-footer>
